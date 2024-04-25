@@ -123,8 +123,8 @@ def letters(m) -> str:
 ctx = Context()
 modifier_keys = {
     # If you find 'alt' is often misrecognized, try using 'alter'.
-    "alt": "alt",  #'alter': 'alt',
-    "control": "ctrl",  #'troll':   'ctrl',
+    "alter": "alt",
+    "fly": "ctrl",  #'troll':   'ctrl',
     "shift": "shift",  #'sky':     'shift',
     "super": "super",
 }
@@ -146,8 +146,7 @@ punctuation_words = {
     # Workaround for issue with conformer b-series; see #946
     "coma": ",",
     "period": ".",
-    "full stop": ".",
-    "semicolon": ";",
+    "semper": ";",
     "colon": ":",
     "forward slash": "/",
     "question mark": "?",
@@ -171,18 +170,13 @@ punctuation_words = {
 }
 symbol_key_words = {
     "dot": ".",
-    "point": ".",
-    "quote": "'",
-    "question": "?",
-    "apostrophe": "'",
+    "shingle": "'",
+    "questo": "?",
     "L square": "[",
     "left square": "[",
     "brack": "[",
     "bracket": "[",
     "left bracket": "[",
-    "square": "[",
-    "R square": "]",
-    "right square": "]",
     "r brack": "]",
     "r bracket": "]",
     "right bracket": "]",
@@ -196,31 +190,19 @@ symbol_key_words = {
     "tilde": "~",
     "bang": "!",
     "down score": "_",
-    "underscore": "_",
-    "paren": "(",
-    "brace": "{",
-    "left brace": "{",
-    "curly bracket": "{",
-    "left curly bracket": "{",
-    "r brace": "}",
-    "right brace": "}",
-    "r curly bracket": "}",
-    "right curly bracket": "}",
-    "angle": "<",
-    "left angle": "<",
-    "less than": "<",
+    "prekris": "(",
+    "curly": "{",
+    "r curly": "}",
+    "langle": "<",
     "rangle": ">",
     "R angle": ">",
-    "right angle": ">",
-    "greater than": ">",
     "star": "*",
     "hash": "#",
     "percent": "%",
     "caret": "^",
     "amper": "&",
     "pipe": "|",
-    "dub quote": '"',
-    "double quote": '"',
+    "quote": '"',
     # Currencies
     "dollar": "$",
     "pound": "£",
@@ -239,10 +221,6 @@ ctx.lists["self.arrow_key"] = {
 }
 
 simple_keys = [
-    "end",
-    "enter",
-    "escape",
-    "home",
     "insert",
     "pagedown",
     "pageup",
@@ -252,11 +230,13 @@ simple_keys = [
 
 alternate_keys = {
     "wipe": "backspace",
-    "delete": "backspace",
-    #'junk': 'backspace',
-    "forward delete": "delete",
+    "deli": "delete",
     "page up": "pageup",
     "page down": "pagedown",
+    "shock": "enter",
+    "cancel": "escape",
+    "ratch": "end",
+    "latch": "home"
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
