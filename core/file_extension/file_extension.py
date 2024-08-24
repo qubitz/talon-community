@@ -11,6 +11,8 @@ _file_extensions_defaults = {
     "dot mark down": ".md",
     "dot shell": ".sh",
     "dot vim": ".vim",
+    "dot sequel": ".sql",
+    "dot sequel light": ".sqlite",
     "dot see": ".c",
     "dot see sharp": ".cs",
     "dot com": ".com",
@@ -52,7 +54,7 @@ _file_extensions_defaults = {
     "dot toml": ".toml",
     "dot java": ".java",
     "dot class": ".class",
-    "dot log": ".log",
+    "dot log": ".log"
 }
 
 file_extensions = get_list_from_csv(
