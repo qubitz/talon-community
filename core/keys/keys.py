@@ -125,7 +125,7 @@ modifier_keys = {
     # If you find 'alt' is often misrecognized, try using 'alter'.
     "alter": "alt",
     "fly": "ctrl",  #'troll':   'ctrl',
-    "shift": "shift",  #'sky':     'shift',
+    "yaw": "shift",  #'sky':     'shift',
     "super": "super",
 }
 if app.platform == "mac":
@@ -143,11 +143,6 @@ punctuation_words = {
     ",": ",",  # <== these things
     "back tick": "`",
     "comma": ",",
-    # Workaround for issue with conformer b-series; see #946
-    "coma": ",",
-    "period": ".",
-    "semper": ";",
-    "colon": ":",
     "forward slash": "/",
     "question mark": "?",
     "exclamation mark": "!",
@@ -169,17 +164,13 @@ punctuation_words = {
     "right paren": ")",
 }
 symbol_key_words = {
+    "drip": ",",
+    "semper": ";",
+    "stack": ":",
     "dot": ".",
-    "shingle": "'",
+    "foot": "'",
+    "inch": '"',
     "questo": "?",
-    "L square": "[",
-    "left square": "[",
-    "brack": "[",
-    "bracket": "[",
-    "left bracket": "[",
-    "r brack": "]",
-    "r bracket": "]",
-    "right bracket": "]",
     "slash": "/",
     "backslash": "\\",
     "minus": "-",
@@ -189,20 +180,25 @@ symbol_key_words = {
     "grave": "`",
     "tilde": "~",
     "bang": "!",
-    "down score": "_",
-    "prekris": "(",
-    "curly": "{",
-    "r curly": "}",
+    "score": "_",
+    "pad": " ",
+
+    "curve": "(",
+    "recurve": ")",
+    "lackey": "{",
+    "racky": "}",
+    "locker": "[",
+    "rocker": "]",
     "langle": "<",
     "rangle": ">",
-    "R angle": ">",
+
     "star": "*",
     "hash": "#",
     "percent": "%",
     "caret": "^",
     "amper": "&",
+    "atty": "@",
     "pipe": "|",
-    "quote": '"',
     # Currencies
     "dollar": "$",
     "pound": "£",
@@ -225,12 +221,12 @@ simple_keys = [
     "pagedown",
     "pageup",
     "space",
-    "tab",
 ]
 
 alternate_keys = {
     "wipe": "backspace",
     "deli": "delete",
+    "tabby": "tab",
     "page up": "pageup",
     "page down": "pagedown",
     "shock": "enter",

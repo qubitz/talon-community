@@ -13,16 +13,13 @@ next one: edit.find_next()
 scroll up: edit.page_up()
 scroll down: edit.page_down()
 
-go word left: edit.word_left()
-go word right: edit.word_right()
+drain: edit.word_left()
+step: edit.word_right()
 
-go left: edit.left()
-go right: edit.right()
-go up: edit.up()
-go down: edit.down()
-
-go line start | head: edit.line_start()
-go line end | tail: edit.line_end()
+lease: edit.left()
+ross: edit.right()
+sauce: edit.up()
+dunce: edit.down()
 
 go way left:
     edit.line_start()
@@ -39,9 +36,9 @@ go page down: edit.page_down()
 
 # Selecting
 select all: edit.select_all()
-select line: edit.select_line()
-select line start: user.select_line_start()
-select line end: user.select_line_end()
+shackle: edit.select_line()
+shackle start: user.select_line_start()
+shackle end: user.select_line_end()
 
 select left: edit.extend_left()
 select right: edit.extend_right()
@@ -79,11 +76,11 @@ clear down:
 
 clear word: edit.delete_word()
 
-clear word left:
+splat:
     edit.extend_word_left()
     edit.delete()
 
-clear word right:
+swallow:
     edit.extend_word_right()
     edit.delete()
 
@@ -172,8 +169,8 @@ new line above: edit.line_insert_up()
 new line below | slap: edit.line_insert_down()
 
 # Insert padding with optional symbols
-(pad | padding): user.insert_between(" ", " ")
-(pad | padding) <user.symbol_key>+:
+padding: user.insert_between(" ", " ")
+padding <user.symbol_key>+:
     insert(" ")
     user.insert_many(symbol_key_list)
     insert(" ")

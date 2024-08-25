@@ -171,21 +171,20 @@ formatters_dict = {
 
 # Mapping from spoken phrases to formatter names
 code_formatter_names = {
-    "all cap": "ALL_CAPS",
-    "all down": "ALL_LOWERCASE",
+    "shout": "ALL_CAPS",
+    "whisper": "ALL_LOWERCASE",
     "camel": "PRIVATE_CAMEL_CASE",
-    "dotted": "DOT_SEPARATED",
-    "dub string": "DOUBLE_QUOTED_STRING",
+    "pebble": "DOT_SEPARATED",
     "dunder": "DOUBLE_UNDERSCORE",
     "hammer": "PUBLIC_CAMEL_CASE",
-    "kebab": "DASH_SEPARATED",
+    "spine": "DASH_SEPARATED",
     "packed": "DOUBLE_COLON_SEPARATED",
     "padded": "SPACE_SURROUNDED_STRING",
     "slasher": "ALL_SLASHES",
     "conga": "SLASH_SEPARATED",
     "smash": "NO_SPACES",
     "snake": "SNAKE_CASE",
-    "string": "SINGLE_QUOTED_STRING",
+    "strangle": "SINGLE_QUOTED_STRING",
 }
 prose_formatter_names = {
     "say": "NOOP",

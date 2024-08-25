@@ -10,3 +10,11 @@ go <user.arrow_keys>: user.move_cursor(arrow_keys)
 press <user.modifiers>: key(modifiers)
 # for consistency with dictation mode and explicit arrow keys if you need them.
 press <user.keys>: key(keys)
+
+round: user.insert_between("(",")")
+square: user.insert_between("[","]")
+curly: user.insert_between("{","}")
+diamond: user.insert_between("<",">")
+quad: user.insert_between("\"","\"")
+twin: user.insert_between("'","'")
+ski: user.insert_between("`","`")
