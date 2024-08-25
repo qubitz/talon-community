@@ -8,7 +8,7 @@ tag(): user.tabs
 # multiple_cursors.py support end
 
 # Auto complete
-complete: user.idea("action CodeCompletion")
+allude: user.idea("action CodeCompletion")
 perfect: user.idea("action CodeCompletion,action CodeCompletion")
 smart: user.idea("action SmartTypeCompletion")
 (done | finish): user.idea("action EditorCompleteStatement")
@@ -33,7 +33,8 @@ extract method: user.idea("action ExtractMethod")
 refactor in line: user.idea("action Inline")
 refactor move: user.idea("action Move")
 refactor rename: user.idea("action RenameElement")
-rename file: user.idea("action RenameFile")
+refactor file: user.idea("action RenameFile")
+fix: key(alt-enter)
 fix (format | formatting): user.idea("action ReformatCode")
 fix imports: user.idea("action OptimizeImports")
 #navigation
@@ -189,7 +190,10 @@ toggle [line] breakpoint: user.idea("action ToggleLineBreakpoint")
 toggle method breakpoint: user.idea("action ToggleMethodBreakpoint")
 run menu: user.idea("action ChooseRunConfiguration")
 run test: user.idea("action RunClass")
-run test again: user.idea("action Rerun")
+test explore: key(alt-shift-8)
+test run all:
+    key(ctrl-;)
+    key(shift-l)
 debug test: user.idea("action DebugClass")
 step over: user.idea("action StepOver")
 step into: user.idea("action StepInto")
