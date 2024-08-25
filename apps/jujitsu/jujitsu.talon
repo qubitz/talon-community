@@ -19,6 +19,7 @@ jojo commit [<user.jujitsu_arguments>] message [<user.prose>]:
 
 # Optimistic execution for frequently used commands that are harmless (don't
 # change repository or index state).
-jojo status$: "jj status\n"
+jojo status$: "jj s\n"
 jojo show head$: "jj show HEAD\n"
 jojo diff head$: "jj diff\n"
+jojo list$: "jj ls\n"

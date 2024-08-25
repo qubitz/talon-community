@@ -34,6 +34,7 @@ def on_ready():
         "videos": os.path.join(user_path, "Videos"),
         "talon home": str(actions.path.talon_home()),
         "talon user": str(actions.path.talon_user()),
+        "source": os.path.join(user_path, "source"),
     }
 
     if app.platform == "windows":
