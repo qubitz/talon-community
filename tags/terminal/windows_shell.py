@@ -22,15 +22,21 @@ class Actions:
         actions.key("enter")
 
     def terminal_change_directory(path: str):
-        """Lists change directory"""
+        """Changes the current directory to the specified path"""
         actions.insert(f"cd {path}")
         if path:
             actions.key("enter")
 
     def terminal_change_directory_root():
-        """Root of current drive"""
+        """Changes the current directory to the root of the current drive"""
         actions.insert("cd /")
         actions.key("enter")
+
+    def terminal_make_directory(path: str):
+        """Creates a new directory at the specified path"""
+        actions.insert(f"mkdir {path}")
+        if path:
+            actions.key("enter")
 
     def terminal_clear_screen():
         """Clear screen"""
