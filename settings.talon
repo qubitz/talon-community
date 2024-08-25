@@ -1,6 +1,6 @@
 settings():
     # Adjust the scale of the imgui
-    imgui.scale = 1.3
+    imgui.scale = 1.0
 
     # If `true`, automatically show the picker GUI when the file manager has focus
     user.file_manager_auto_show_pickers = false
@@ -12,7 +12,7 @@ settings():
     user.help_max_contexts_per_page = 20
 
     # Set the scroll amount for continuous scroll/gaze scroll
-    user.mouse_continuous_scroll_amount = 80
+    user.mouse_continuous_scroll_amount = 120
 
     # If `true`, stop continuous scroll/gaze scroll with a pop
     user.mouse_enable_pop_stops_scroll = true
@@ -78,4 +78,4 @@ settings():
 # By default saying "one" would write "1", however many users find this behavior
 # prone to false positives. If you uncomment this, you will need to say
 # "numb one" to write "1". Note that this tag will eventually be activated by default
-# tag(): user.prefixed_numbers
+tag(): user.prefixed_numbers
