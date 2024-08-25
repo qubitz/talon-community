@@ -10,6 +10,32 @@ ctx.lists["user.code_common_function"] = {
     "string": ".ToString",
 }
 
+standard_library_types = {
+    "list": "List",
+    "enumerable": "IEnumerable",
+    "string": "string",
+}
+
+scalar_types = {
+    "short": "short",
+    "integer": "integer",
+    "long": "long",
+    "boolean": "bool",
+    "character": "char",
+}
+
+compound_types = {
+    "tuple": "()",
+    "array": "[]",
+}
+
+# tag: functions
+ctx.lists["user.code_type"] = {
+    **scalar_types,
+    **compound_types,
+    **standard_library_types
+}
+
 
 @ctx.action_class("user")
 class UserActions:
@@ -248,3 +274,9 @@ class UserActions:
         )
 
         actions.user.code_insert_function(result, None)
+
+    def code_insert_type_annotation(type: str):
+        actions.auto_insert(f"{type} ")
+
+    def code_insert_return_type(type: str):
+        actions.auto_insert(f"{type} ")

@@ -25,3 +25,12 @@ settings():
     user.code_private_variable_formatter = "PRIVATE_CAMEL_CASE"
     user.code_protected_variable_formatter = "PUBLIC_CAMEL_CASE"
     user.code_public_variable_formatter = "PUBLIC_CAMEL_CASE"
+
+state let: "var "
+op new: "new "
+op null else: " ?? "
+op return: "return "
+
+state const: "const "
+state async: "async "
+op await: "await "
