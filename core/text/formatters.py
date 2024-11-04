@@ -176,7 +176,7 @@ code_formatter_names = {
     "camel": "PRIVATE_CAMEL_CASE",
     "pebble": "DOT_SEPARATED",
     "dunder": "DOUBLE_UNDERSCORE",
-    "hammer": "PUBLIC_CAMEL_CASE",
+    "blaze": "PUBLIC_CAMEL_CASE",
     "spine": "DASH_SEPARATED",
     "packed": "DOUBLE_COLON_SEPARATED",
     "padded": "SPACE_SURROUNDED_STRING",
