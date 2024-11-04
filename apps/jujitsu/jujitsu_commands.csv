@@ -20,8 +20,8 @@ config list
 config path
 config set
 describe
-diff
-diffedit
+diff, difference
+diffedit, difference edit
 duplicate
 edit
 files
@@ -40,7 +40,7 @@ git remote remove
 git remote rename
 help
 init, in it
-interdiff, intersect diff
+interdiff, intersect difference
 log
 new
 next
