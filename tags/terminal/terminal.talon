@@ -6,7 +6,8 @@ lisa: user.terminal_list_directories()
 lisa all: user.terminal_list_all_directories()
 katie [dir] [<user.text>]: user.terminal_change_directory(text or "")
 katie root: user.terminal_change_directory_root()
-katie up: user.terminal_change_directory("..") # katie up <n> times would be cool
+# katie up <n> times would be cool
+katie up: user.terminal_change_directory("..")
 katie back: user.terminal_change_directory("-")
 maker [<user.text>]: user.terminal_make_directory(text or "")
 go <user.system_path>: insert('cd "{system_path}"\n')
