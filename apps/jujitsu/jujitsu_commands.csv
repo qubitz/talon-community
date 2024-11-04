@@ -1,17 +1,18 @@
 Subcommand, Spoken form (optional)
 abandon
 backout, back out
-branch
-branch create
-branch delete
-branch forget
-branch list
-branch rename
-branch set
-branch track
-branch untrack, branch un track
+bookmark
+bookmark create
+bookmark delete
+bookmark forget
+bookmark list
+bookmark rename
+bookmark set
+bookmark track
+bookmark untrack, bookmark un track
 cat
 chmod, change mod
+commit
 config
 config edit
 config get
@@ -64,7 +65,6 @@ sparse set
 split
 squash
 status
-Subcommand, Spoken form (optional)
 tag
 tag list
 undo
