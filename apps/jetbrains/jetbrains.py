@@ -53,24 +53,27 @@ port_mapping = {
     "RubyMine": 8661,
     "RubyMine-EAP": 8661,
     "PyCharm": 8658,
+    "RustRover": 8652,
     "pycharm64.exe": 8658,
     "WebStorm": 8663,
     "webstorm64.exe": 8663,
+    "rustrover64.exe": 8652,
 }
 
 
 def _get_nonce(port, file_prefix):
     file_name = file_prefix + str(port)
     try:
-        with open(os.path.join(tempfile.gettempdir(), file_name)) as fh:
+        tmpNonce = os.path.join(tempfile.gettempdir(), file_name)
+        with open(tmpNonce) as fh:
             return fh.read()
     except FileNotFoundError as e:
         try:
-            home = str(Path.home())
-            with open(os.path.join(home, file_name)) as fh:
+            homeNonce = os.path.join(str(Path.home()), file_name)
+            with open(homeNonce) as fh:
                 return fh.read()
         except FileNotFoundError as eb:
-            print(f"Could not find {file_name} in tmp or home")
+            print(f"Could not find {tmpNonce} or {homeNonce}")
             return None
     except OSError as e:
         print(e)
@@ -141,6 +144,12 @@ os: windows
 and app.name: JetBrains Rider
 os: windows
 and app.exe: rider64.exe
+"""
+mod.apps.jetbrains = """
+os: windows
+and app.name: RustRover
+os: windows
+and app.exe: rustrover64.exe
 """
 
 
